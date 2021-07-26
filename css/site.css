@@ -1,0 +1,129 @@
+html,
+body {
+  position: relative;
+  color: #212121;
+  width: 100%;
+  height: fit-content;
+}
+
+body {
+  padding-bottom: 5rem;
+}
+
+body>main {
+  /* margin to account for nav bar */
+  margin-top: 85px;
+  margin-bottom: 20px;
+}
+
+main {
+  margin-bottom: 15rem;
+}
+
+.heroText {
+  font-family: modesto-open-shadow, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(195, 255, 0);
+}
+
+.bgimage {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/GridBG.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+h1 {
+  color: #1f63a1;
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.spacer {
+  margin: 5rem auto 0;
+}
+
+h4 {
+  font-size: 2.1rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  line-height: 1.4em;
+}
+
+.minHeight {
+  min-height: 80vh;
+}
+
+.border-dash {
+  border: 2px dashed navy;
+  border-radius: 6px;
+}
+
+.dark-gray,
+.light-gray {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 200;
+  height: 100%;
+  min-height: 10rem;
+  letter-spacing: 0.15rem;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.dark-gray {
+  background-color: #212529;
+}
+
+.dark-gray-bg {
+  background-color: #212529;
+}
+
+.light-gray {
+  background-color: #6C757D;
+}
+
+#readMoreBtn {
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+#search-form {
+  width: 100%;
+}
+
+#search-input {
+  display: inline-block;
+  width: 100%;
+}
+
+#search-btn {
+  display: inline-block;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.article-link {
+  color: #80d5fb;
+  text-decoration: none;
+
+  transition: color 0.6s ease-out;
+}
+
+.article-link:hover {
+  color: rgb(195, 255, 0);
+}
+
+.__gh-lg {
+  height: 20rem;
+}
+
+#grid-3 {
+  height: fit-content;
+}
