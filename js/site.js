@@ -10,6 +10,6 @@ readMoreBtn.addEventListener('click', e => {
   } else {
     readMoreBtn.innerText = 'Read More';
     const readableContent = document.querySelector('#expandable-content');
-    readableContent.style.height = '50%';
+    readableContent.style.height = 'calc(50% - 0.25rem)';
   }
 });

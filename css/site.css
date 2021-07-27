@@ -95,7 +95,15 @@ h4 {
 }
 
 .halfViewHeight {
-  min-height: 50vh;
+  min-height: 50%;
+}
+
+.__gh-lg {
+  height: 20rem;
+}
+
+#grid-3 {
+  height: fit-content;
 }
 
 .border-dash {
@@ -106,11 +114,10 @@ h4 {
 .dark-gray,
 .light-gray {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 200;
   height: 100%;
-  letter-spacing: 0.15rem;
-  width: 100%;
+  letter-spacing: 0.1rem;
   padding: 1rem 2rem;
 }
 
@@ -130,6 +137,10 @@ h4 {
 .light-gray-bg {
   background-color: #6C757D;
   color: #fff;
+}
+
+#expandable-content {
+  margin-top: 0.5rem;
 }
 
 #readMoreBtn {
@@ -163,14 +174,6 @@ h4 {
   color: rgb(195, 255, 0);
 }
 
-.__gh-lg {
-  height: 20rem;
-}
-
-#grid-3 {
-  height: fit-content;
-}
-
 @media only screen and (max-width: 575px) {
   header.fixed-top {
     width: 100%;
@@ -195,14 +198,6 @@ h4 {
   #search-nav {
     margin-top: 1rem;
   }
-
-  #expandable-content {
-    margin-top: 0.5rem;
-  }
-
-  #expandable {
-    height: fit-content;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -225,4 +220,9 @@ h4 {
     border-bottom: 1px dashed rgb(85, 239, 196);
     text-align: center;
   }
+
+  /* #expandable,
+  #expandable-content {
+    height: 100%;
+  } */
 }
