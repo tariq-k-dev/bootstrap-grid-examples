@@ -6,10 +6,6 @@ body {
   height: 100%;
 }
 
-body {
-  padding-bottom: 5rem;
-}
-
 body>main {
   /* margin to account for nav bar */
   margin-top: 7rem;
@@ -92,18 +88,6 @@ h4 {
 
 .minHeight {
   min-height: 80vh;
-}
-
-.halfViewHeight {
-  min-height: 50%;
-}
-
-.__gh-lg {
-  height: 20rem;
-}
-
-#grid-3 {
-  height: fit-content;
 }
 
 .border-dash {
