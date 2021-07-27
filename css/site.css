@@ -204,3 +204,25 @@ h4 {
     height: fit-content;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  header.fixed-top {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+
+  header.fixed-top>nav {
+    width: 100%;
+  }
+
+  ul.navbar-nav>li.nav-item:first-of-type {
+    margin-top: 1rem;
+    border-top: 1px dashed rgb(85, 239, 196);
+    border-bottom: 1px dashed rgb(85, 239, 196);
+  }
+
+  ul.navbar-nav>li.nav-item {
+    border-bottom: 1px dashed rgb(85, 239, 196);
+    text-align: center;
+  }
+}
