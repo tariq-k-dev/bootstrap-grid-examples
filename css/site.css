@@ -3,7 +3,7 @@ body {
   position: relative;
   color: #212121;
   width: 100%;
-  height: fit-content;
+  height: 100%;
 }
 
 body {
@@ -12,12 +12,41 @@ body {
 
 body>main {
   /* margin to account for nav bar */
-  margin-top: 85px;
+  margin-top: 3rem;
   margin-bottom: 20px;
 }
 
-main {
-  margin-bottom: 15rem;
+header>nav {
+  background-color: #222f3e;
+  background-color: #130f40;
+}
+
+.navbar-brand,
+.nav-link {
+  color: rgb(85, 239, 196);
+
+  transition: color 0.4s ease-out;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+  color: rgb(195, 255, 0);
+}
+
+.nav-link.active {
+  color: #f6e58d;
+}
+
+.navbar-toggler {
+  border-color: rgba(85, 239, 196, 1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(85, 239, 196, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.container {
+  height: 100%;
 }
 
 .heroText {
@@ -52,12 +81,15 @@ h1 {
 h4 {
   font-size: 2.1rem;
   font-weight: 400;
-  margin-top: 1.5rem;
   line-height: 1.4em;
 }
 
 .minHeight {
   min-height: 80vh;
+}
+
+.halfViewHeight {
+  min-height: 50vh;
 }
 
 .border-dash {
@@ -71,7 +103,6 @@ h4 {
   font-size: 1.8rem;
   font-weight: 200;
   height: 100%;
-  min-height: 10rem;
   letter-spacing: 0.15rem;
   width: 100%;
   padding: 1rem 2rem;
@@ -83,10 +114,16 @@ h4 {
 
 .dark-gray-bg {
   background-color: #212529;
+  color: #fff;
 }
 
 .light-gray {
   background-color: #6C757D;
+}
+
+.light-gray-bg {
+  background-color: #6C757D;
+  color: #fff;
 }
 
 #readMoreBtn {
@@ -126,4 +163,19 @@ h4 {
 
 #grid-3 {
   height: fit-content;
+}
+
+@media only screen and (max-width: 575px) {
+
+  #search-nav {
+    margin-top: 1rem;
+  }
+
+  #expandable-content {
+    margin-top: 0.5rem;
+  }
+
+  #expandable {
+    height: fit-content;
+  }
 }
