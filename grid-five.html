@@ -15,13 +15,25 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous">
     <link rel="stylesheet" href="css/site.css">
+
+    <style>
+      @media only screen and (max-width: 576px) {
+        .col-h-1x {
+          height: 15rem;
+        }
+
+        .col-h-2x {
+          height: 30rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <header class="fixed-top">
       <nav class="navbar navbar-expand-lg text-white">
         <div class="container">
-          <a class="navbar-brand" href="index.html">GRIDS</a>
+          <a class="navbar-brand" href="/">BOOTSTRAP GRIDS</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -31,7 +43,11 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Grid 1</a>
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="grid-one.html">Grid
+                  1</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="grid-two.html">Grid
@@ -65,31 +81,28 @@
         </div>
       </nav>
     </header>
-    <main>
-      <h1>Bootstrap Grid Examples</h1>
-    </main>
 
     <!-- Grid 5 -->
-    <div class="container" style="height: 70%;">
+    <div class="container container-padding">
       <div class="row">
         <div class="col">
           <h4>Grid 5</h4>
         </div>
       </div>
-      <div class="row g-2" style="height: 100%;">
+      <div id="grid-5" class="row g-2">
         <div class="col-sm-12 col-md-3">
           <span
-            class="d-flex align-items-center justify-content-center light-gray">COL
+            class="d-flex align-items-center justify-content-center light-gray col-h-1x">COL
             ONE</span>
         </div>
         <div class="col-sm-12 col-md-6">
           <span
-            class="d-flex align-items-center justify-content-center dark-gray">COL
+            class="d-flex align-items-center justify-content-center dark-gray col-h-2x">COL
             TWO</span>
         </div>
         <div class="col-sm-12 col-md-3">
           <span
-            class="d-flex align-items-center justify-content-center light-gray">COL
+            class="d-flex align-items-center justify-content-center light-gray col-h-1x">COL
             THREE</span>
         </div>
       </div>
