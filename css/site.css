@@ -12,6 +12,12 @@ html {
 
 body {
   background-color: #fff;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .heroText {
